@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>АТ «КОММОД» - аналитический терминал</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="АТ КОММОД – терминал на рынке нефтепродуктов России">
+    <meta name="keywords" content="Коммод, аналитика нефтепродуктов, биржа спбмтсб, спбмтсб ход торгов">
+    <link rel="stylesheet" href='./css/style.min.css'>
+    <link rel="stylesheet" href="./css/mediaAdapt.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header fix _lp">
+            <div class="header__row">
+                <div class="header__container _container">
+                    <a class="header__tr-link" href="/main">
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.2222 16H1.77778C0.795938 16 0 15.2041 0 14.2222V10.6667H1.77778V14.2222H14.2222V1.77778H1.77778V5.33333H0V1.77778C0 0.795938 0.795938 0 1.77778 0H14.2222C15.2041 0 16 0.795938 16 1.77778V14.2222C16 15.2041 15.2041 16 14.2222 16ZM7.11111 11.5556V8.88889H0V7.11111H7.11111V4.44444L11.5556 8L7.11111 11.5556Z" fill="white" />
+                        </svg>
+                        В веб-версию АТ “КОММОД”
+                    </a>
+                    <a href="" class="header__notice">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="13" cy="13" r="13" fill="#919191" />
+                            <path d="M13.5 21C12.603 20.9957 11.8757 20.2831 11.8669 19.4H15.1169C15.1186 19.6139 15.0772 19.826 14.995 20.024C14.7818 20.5056 14.3465 20.8569 13.825 20.968H13.8209H13.8088H13.7941H13.7868C13.6924 20.9874 13.5964 20.9981 13.5 21ZM20 18.6H7V17L8.625 16.2V11.8C8.5822 10.6713 8.84107 9.5513 9.37575 8.552C9.90797 7.62521 10.8177 6.9671 11.875 6.744V5H15.125V6.744C17.2204 7.2352 18.375 9.0304 18.375 11.8V16.2L20 17V18.6Z" fill="#2D2D2D" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="header__content _container">
+                <div class="header__menu menu">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="/Home/Index"><img src='./img/logo.svg' alt=""></a></li>
+                            <li class="menu__item"><a class="menu__link" href="/Home/Index">ДОМОЙ</a></li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="/Home/large-wholesale">КРУПНЫЙ ОПТ</a>
+                                <ul class="menu__sub-list">
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/stations">Станции</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/railway">Ж/д</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/pipe">Труба</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/market">Срочный рынок</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/sug">СУГ</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/analytics">Аналитика</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/quotes">Котировки</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="/Home/small-wholesale">МЕЛКИЙ ОПТ</a></li>
+                            <li class="menu__item">
+                                <span class="menu__link">О “КОММОДЕ”</span>
+                                <ul class="menu__sub-list">
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/versions">Версии</a>
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a class="menu__sub-link" href="/Home/contacts">Контакты</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="/Home/magazine">БЛОГ</a></li>
+                        </ul>
+                    </nav>
+                        <div class="menu__buttons">
+                            <a class="menu__btn _icon-user _active" href="/Account/Login">Войти в личный кабинет</a>
+                        </div>
+                </div>
+
+
+                
+            </div>
+            
+        </header>
+
+        
+
+
+<main class="page">
+    <section class="initial _scroll">
+        <div class="initial__slider _swiper">
+            <div class="initial__slide _ibg">
+                <img src="./img/home/banner-bg-2.jpg" alt="">
+                <div class="initial__content">
+                    <h2 class="initial__title">Космически быстрое принятие решений на рынке нефтепродуктов</h2>
+                    <p class="initial__text">АТ “КОММОД” - незаменимый инструмент современного трейдера, аналитика или конечного протребителя нефтепродуктов. Принимайте оптимальные торговые решения быстрее ваших конкурентов и оценивайте ситуацию на рынке нефтепродуктов в режиме реального времени.</p>
+                    <div class="initial__links">
+                        <a class="initial__link btn" href="/Home/buy">Попробовать бесплатно</a>
+                        <a class="initial__link btn btn_transparent" href="/Home/versions">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="initial__slide _ibg">
+                <img src="./img/home/banner-bg-3.jpg" alt="">
+                <div class="initial__content">
+                    <h2 class="initial__title">Вся аналитика у вас в кармане. В прямом смысле слова.</h2>
+                    <p class="initial__text">С мобильной версией АТ”КОММОД” вы больше никогда не будете привязаны к рабочему месту и вашему компьютеру. Теперь все необходимые данные можно найти в вашем мобильном телефоне на iOS или Android. Скачайте мобильную версию в AppStore или Google Маркет.</p>
+                    <div class="initial__links">
+                        <a class="initial__link btn" href="/Home/buy">Попробовать бесплатно</a>
+                        <a href="#callback" class="initial__link btn btn_transparent _popup-link">Узнать тарифы</a>
+                    </div>
+                </div>
+            </div>
+            <div class="initial__slide _ibg">
+                <img src="./img/home/banner-bg-4.jpg" alt="">
+                <div class="initial__content">
+                    <h2 class="initial__title">Все версии АТ “КОММОД” в одной подписке</h2>
+                    <p class="initial__text">В вашу подписку включены АТ “КОММОД” для ПК под управлением Windows, мобильное приложение для iOS / Android и веб-версия терминала. Выбирайте удобный вам способ использования АТ “КОММОД” совершенно свободно.</p>
+                    <div class="initial__links">
+                        <a class="initial__link btn" href="/Home/buy">Попробовать бесплатно</a>
+                        <a href="#callback" class="initial__link btn btn_transparent _popup-link">Узнать тарифы</a>
+                    </div>
+                </div>
+            </div>
+            <div class="initial__slide _ibg">
+                <img src="./img/home/banner-bg.jpg" alt="">
+                <div class="initial__content">
+                    <h2 class="initial__title">Аналитическая экосистема АТ “КОММОД”</h2>
+                    <p class="initial__text">АТ “КОММОД” - это гораздо больше, чем расчет биржевых цен с учетом тарифов в реальном времени. Вам доступен уникальный набор инструментов, который поможет вам в трейдинге и закупках нефтепродуктов, а также в анализе рынка.</p>
+                    <div class="initial__links">
+                        <a class="initial__link btn" href="/Home/buy">Попробовать бесплатно</a>
+                        <a href="#callback" class="initial__link btn btn_transparent _popup-link">Узнать тарифы</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="initial__control initial__control_prev _icon-chevron"></button>
+        <button class="initial__control initial__control_next _icon-chevron"></button>
+        <div class="initial__pagination"></div>
+    </section>
+    <section class="commod">
+        <div class="commod__content _container _tabs">
+           <div class="commod__row">
+                <ul class="commod__nav">
+                    <li class="commod__item _tabs-item _active">О КОММОДЕ</li>
+                    <li class="commod__item _tabs-item">КРУПНЫЙ ОПТ</li>
+                    <li class="commod__item _tabs-item">МЕЛКИЙ ОПТ</li>
+                </ul>
+            </div> 
+            <div class="commod__body">
+                <div class="commod__block _tabs-block _active">
+                    <div class="commod__column">
+                        <h1 class="commod__title">АТ “КОММОД”</h1>
+                        <p class="commod__text">Аналитический терминал “КОММОД” - разработан для потребителей и производителей нефтепродуктов, а также для трейдеров, брокеров и аналитиков топливного рынка.АТ «КОММОД» позволяет быстрее принимать оптимальные торговые решения в условиях постоянно меняющегося рынка.</p>
+                        <a class="commod__link _icon-arrow" href="/Home/versions">Узнать больше</a>
+                    </div>
+                    <div class="commod__img">
+                        <img src="./img/home/commod-img-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="commod__block _tabs-block">
+                    <div class="commod__column">
+                        <h2 class="commod__title">Крупный опт</h2>
+                        <p class="commod__text">Крупный опт - это набор из 7 модулей, которые помогут вам выстроить эффективную торговую стратегию на крупнооптовом рынке нефтепродуктов. “КОММОД” покажет вам лучшие цены на нефтепродукты на любой станции назначения и ЛПДС с учетом тарифов на доставку ж/д транспортом или по трубе. Анализируйте рынок с помощью мощных инструментов аналитики.</p>
+                        <a class="commod__link _icon-arrow" href="/Home/large-wholesale">Узнать больше</a>
+                    </div>
+                    <div class="commod__img">
+                        <img src="./img/home/commod-img-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="commod__block _tabs-block">
+                    <div class="commod__column">
+                        <h2 class="commod__title">Мелкий опт</h2>
+                        <p class="commod__text">Мелкий опт - это не только маркетплейс для продавцов и покупателей на мелкооптовом рынке нефтепродуктов, но и мощный аналитический инструмент. Вы видите только актуальные цены напрямую от продавцов в любом регионе, а также историю цен.</p>
+                        <a class="commod__link _icon-arrow" href="/Home/small-wholesale">Узнать больше</a>
+                    </div>
+                    <div class="commod__img">
+                        <img src="./img/home/commod-img-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wholesale">
+        <div class="wholesale__block wholesale__block_full _ibg">
+            <img src="./img/home/wholesale.jpg" alt="">
+            <h2 class="wholesale__title">Крупный опт</h2>
+            <h3 class="wholesale__subtitle">Комплекс инструментов.</h3>
+            <p class="wholesale__text wholesale__text_gray">
+                Моментальный расчет цены товара<br>
+                на любом конечном пункте с трубным или ж/д тарифом
+            </p>
+            <a class="wholesale__link _icon-arrow" href="/Home/large-wholesale">Узнать больше</a>
+            <a class="wholesale__link _icon-arrow" href="/Home/buy">Купить</a>
+        </div>
+        <div class="wholesale__block _ibg">
+            <img src="./img/home/wholesale-1.jpg" alt="">
+            <h2 class="wholesale__title">Труба</h2>
+            <p class="wholesale__text">
+                Весь рынок ЛПДС
+                <br>на одном экране
+            </p>
+            <a class="wholesale__link _icon-arrow" href="/Home/pipe">Узнать больше</a>
+        </div>
+        <div class="wholesale__block _ibg">
+            <img src="./img/home/wholesale-2.jpg" alt="">
+            <h2 class="wholesale__title">Аналитика</h2>
+            <p class="wholesale__text">
+                Ускорьте рутинный анализ рынка,
+                <br>используйте готовые расчеты и торговые идеи,
+                <br>выстраивайте оптимальные торговые стратегии
+            </p>
+            <a class="wholesale__link _icon-arrow" href="/Home/Analytics">Узнать больше</a>
+        </div>
+        <div class="wholesale__block _ibg">
+            <img src="./img/home/wholesale-3.jpg" alt="">
+            <h2 class="wholesale__title">ЖД</h2>
+            <p class="wholesale__text">
+                Ж/д партии нефтепродуктов на самых
+                <br>выгодных условиях
+            </p>
+            <a class="wholesale__link _icon-arrow" href="/Home/railway">Узнать больше</a>
+        </div>
+        <div class="wholesale__block _ibg">
+            <img src="./img/home/wholesale-4.jpg" alt="">
+            <h2 class="wholesale__title">Станции</h2>
+            <p class="wholesale__text">
+                Цены любых нефтепродуктов с актуальными
+                <br>тарифами до вашей нефтебазы
+            </p>
+            <a class="wholesale__link _icon-arrow" href="/Home/stations">Узнать больше</a>
+        </div>
+    </section>
+    <section class="choice">
+        <div class="choice__content _container">
+            <h2 class="choice__title title">Какой “КОММОД” выбрать?</h2>
+            <p class="choice__text">Аналитический терминал “КОММОД” - разработан для потребителей и производителей нефтепродуктов, а также для трейдеров, брокеров и аналитиков топливного рынка. АТ “КОММОД” позволяет быстрее принимать оптимальные торговые решения в условиях постоянно меняющегося рынка.</p>
+            <a href="#callback" class="choice__link choice__link_center _icon-arrow _popup-link">Консультация менеджера</a>
+            <div class="choice__block">
+                <div class="choice__column">
+                    <div class="choice__img _ibg">
+                        <img src="./img/home/choice-1.jpg" alt="">
+                    </div>
+                    <p class="choice__subtext"><b>Веб - версия</b> - Весь “КОММОД” у Вас в браузере. Ничего не нужно скачивать и устанавливать - просто зайдите в K-Пространство и наслаждайтесь!</p>
+                    <a class="choice__link _icon-arrow" href="/Home/web">Узнать о КОМММОД Веб</a>
+                </div>
+                <div class="choice__column">
+                    <div class="choice__img _ibg">
+                        <img src="./img/home/choice-2.jpg" alt="">
+                    </div>
+                    <p class="choice__subtext"><b>Десктоп-версия</b> - АТ “КОММОД”, который требует установки на ваш ПК. Необходимо наличие ОС Windows 8 или выше и доступ к интернету.</p>
+                    <a class="choice__link _icon-arrow" href="/Home/desc">Узнать о КОМММОД Деск</a>
+                </div>
+                <div class="choice__column">
+                    <div class="choice__img _ibg">
+                        <img src="./img/home/choice-3.jpg" alt="">
+                    </div>
+                    <p class="choice__subtext"><b>Мобильное приложение</b> - Аналитический терминал, который всегда с Вами. Функционал позволяет заменить полноценный ПК, пока Вы в дороге.</p>
+                    <a class="choice__link _icon-arrow" href="/Home/mobile">Узнать о КОМММОД Мобайл</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why">
+        <div class="why__content _container">
+            <h2 class="why__title title">Почему стоит перейти на АТ “КОММОД”?</h2>
+            <div class="why__block">
+                <div class="why__column">
+                    <img src="./img/home/reload.svg" alt="" class="why__img">
+                    <span class="why__subtitle">Постоянные обновления</span>
+                    <p class="why__text">Мы постоянно обновляем наш продукт, добавляя новые полезные функции и разделы. Все обновления и улучшения бесплатно доступны нашим клиентам.</p>
+                </div>
+                <div class="why__column">
+                    <img src="./img/home/book (1).svg" alt="" class="why__img">
+                    <span class="why__subtitle">Доступ к аналитике</span>
+                    <p class="why__text">Аналитический модуль в АТ “КОММОД” - это мощный инструмент для анализа рынка и планирования. Поднимите ваш анализ рынка на новый уровень и принимайте решения на основе качественных данных.</p>
+                </div>
+                <div class="why__column">
+                    <img src="./img/home/share.svg" alt="" class="why__img">
+                    <span class="why__subtitle">Гибкиие тарифы</span>
+                    <p class="why__text">Не обязательно платить за все модули АТ “КОММОД”. Получите консультацию менеджера и выберите модули АТ “КОММОД”, которые необходимы вам в вашей работе.</p>
+                </div>
+                <div class="why__column">
+                    <img src="./img/home/cart.svg" alt="" class="why__img">
+                    <span class="why__subtitle">Скидочная система</span>
+                    <p class="why__text">Вы постоянный клиент или хотите приобрести сразу несколько модулей? Для вас уже предусмотрена скидка, осталось уточнить ее размер у вашего персонального менеджера.</p>
+                </div>
+                <div class="why__column">
+                    <img src="./img/home/copy (1).svg" alt="" class="why__img">
+                    <span class="why__subtitle">Мобильная версия</span>
+                    <p class="why__text">Большой “КОММОД” у вас в кармане. Следите за ходом торгов в режиме онлайн, расчитывайте стоимость нефтепродуктов на вашей станции назначения, читайте наши аналитические издания.</p>
+                </div>
+                <div class="why__column">
+                    <img src="./img/home/headphones.svg" alt="" class="why__img">
+                    <span class="why__subtitle">Техническая поддержка</span>
+                    <p class="why__text">Мы всегда на связи и готовы ответить на любые ваши вопросы по использованию АТ “КОММОД”. Без бюрократии и автоответчиков. С вами на связи только настоящий профессионал.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="one">
+        <div class="one__content _container">
+            <img src="/img/home/icon-kommod.svg" alt="" class="one__img">
+            <h2 class="one__title title">Незаменимый помощник</h2>
+            <p class="one__text">КОММОД разработан для повышения эффективности вашей работы на бирже. КОММОД - это готовый инструмент для трейдера, закупщика и аналитика, который всегда под рукой - на Вашем ПК или в смартфоне.</p>
+            <a href="#callback" class="one__link _icon-arrow _popup-link">Консультация менеджера</a>
+        </div>
+    </section>
+    <section class="news">
+        <div class="news__content _container">
+            <h2 class="news__title heading">Последние новости</h2>
+            <div class="news__slider _swiper">
+                <div class="news__slide _ibg">
+                    <img src="/img/home/news.jpg" alt="">
+                    <a href="https://youtu.be/iV9ZYkdlUIs" class="news__subtitle">Урок по модулю “Мелкий опт” - как настраивать новичку?</a>
+                    <span class="news__date">10 августа 2021</span>
+                </div>
+                <div class="news__slide _ibg">
+                    <img src="./img/home/news-2.jpg" alt="">
+                    <a class="news__subtitle" href="/Home/article-2">КОММОД Мобайл: <br>выпуски АТР</a>
+                    <span class="news__date">03 апреля 2017</span>
+                </div>
+                <div class="news__slide _ibg">
+                    <img src="./img/home/news-3.jpg" alt="">
+                    <a class="news__subtitle" href="/Home/article-6">Обновление АТ “Коммод” Модуль “АТР”</a>
+                    <span class="news__date">14 дек 2016</span>
+                </div>
+            </div>
+            <div class="news__buttons">
+                <button class="news__control news__control_prev _icon-chevron-2"></button>
+                <button class="news__control news__control_next _icon-chevron-2"></button>
+            </div>
+            <div class="news__pagination"></div>
+        </div>
+    </section>
+    <section class="support">
+        <div class="support__content _container">
+            <h2 class="support__title title">Получите консультацию или техническую помощь.</h2>
+            <p class="support__text">В любой ситуации Вы Можете обратиться за помощью к менеджеру или специалисту службы поддержки</p>
+            <div class="support__block">
+                <div class="support__column">
+                    <div class="support__img">
+                        <img src="./img/home/settings.svg" alt="">
+                    </div>
+                    <h3 class="support__subtitle">Подобрать тариф</h3>
+                    <p class="support__subtext">Не обязательно платить за все модули АТ “КОММОД”. Получите консультацию менеджера и выберите модули АТ “КОММОД”, которые необходимы вам в вашей работе.</p>
+                </div>
+                <div class="support__column">
+                    <div class="support__img">
+                        <img src="./img/home/chat.svg" alt="">
+                    </div>
+                    <h3 class="support__subtitle">Задать вопрос</h3>
+                    <p class="support__subtext">В любой ситуации вы можете обратиться за помощью к менеджеру или специалисту службы поддержки</p>
+                </div>
+                <div class="support__column">
+                    <div class="support__img">
+                        <img src="./img/home/book-2 (1).svg" alt="">
+                    </div>
+                    <h3 class="support__subtitle">Узнать, как пользоваться</h3>
+                    <p class="support__subtext">Мы всегда на связи и готовы ответить на любые ваши вопросы по использованию АТ “КОММОД”. Без бюрократии и автоответчиков. С вами на связи только настоящий профессионал.</p>
+                </div>
+            </div>
+            <a href="#callback" class="support__link _icon-arrow _popup-link">Получить поддержку</a>
+        </div>
+    </section>
+</main>
+
+
+        <footer class="footer">
+            <div class="footer__content _container">
+                <a class="footer__logo" href="/Home/Index"><img src="./img/logo.svg" alt=""></a>
+                <ul class="footer__list">
+                    <li class="footer__item"><span class="footer__title">Информация</span></li>
+                    <li class="footer__item"><a class="footer__link" href="/Home/large-wholesale">Крупный опт</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/Home/small-wholesale">Мелкий опт</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/Home/analytics">Аналитика</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/Home/mobile">Мобильная версия</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/Home/contacts">Контакты</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item"><span class="footer__title">Отдел продаж</span></li>
+                    <li class="footer__item">
+                        <p class="footer__text _icon-marker">123007, г. Москва, Хорошевское шоссе, д. 32А</p>
+                    </li>
+                    <li class="footer__item"><a href="tel:+7 (495) 644-49-12" class="footer__link _icon-tube-2">+7 (495) 644-49-12</a></li>
+                    <li class="footer__item"><a href="mailto:sales@na-atr.ru" class="footer__link _icon-mail">sales@na-atr.ru</a></li>
+                    <li class="footer__item">
+                        <p class="footer__text _icon-watch">Пн-Пт с 09:00 - 18:00</p>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item"><span class="footer__title">Техническая поддержка</span></li>
+                    <li class="footer__item"><a href="tel:+7 (495) 139-01-09" class="footer__link _icon-tube-2">+7 (495) 139-01-09</a></li>
+                    <li class="footer__item"><a href="mailto:support@commod.ru" class="footer__link _icon-mail">support@commod.ru</a></li>
+                    <li class="footer__item"><a href="#callback" class="footer__link footer__link_blue _icon-arrow _popup-link">Консультация специалиста</a></li>
+                </ul>
+            </div>
+            <div class="footer__row">
+                <p class="footer__caption">© Аналитический терминал “КОММОД” 2021 All Rights Reserved</p>
+                <div class="footer__links">
+                    <a href="#facebook" class="_icon-facebook _popup-link"></a>
+                    <a href="#insta" class="_icon-in _popup-link"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- №4 callback -->
+    <div class="popup popup_callback">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Наш менеджер свяжется с вами в ближайшее время</h4>
+                <p class="popup__text">Без спама, без навязывания услуг и без лишних вопросов выясним Ваши потребности.</p>
+                <span class="popup__subtitle">ОСТАВЬТЕ СВОИ КОНТАКТЫ</span>
+                <form method="post" data-ajax="ajax" class="popup__form" data-message="thank" action="/Home/HelpVariantTwo">
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="name" data-error="" data-value="Ваше ФИО" class="popup__input input _req">
+                    </div>
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="phone" data-error="" data-value="Контактный телефон" class="popup__input input _phone _req">
+                    </div>
+                    <label class="popup__check checkbox">
+                        <input data-error="" class="checkbox__input _req" type="checkbox" value="1" name="agreement" checked>
+                        <span class="checkbox__text"><span>Я соглашаюсь с <a href="/Home/Privacy">Политикой конфиденциальности</a></span></span>
+                    </label>
+                    <button type="submit" class="popup__btn p-btn">Отправить запрос</button>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KyaIG5HqB9CodflIPicxnajz4Vto8EWW0vOoZwNonjMUEjNa0wySsHrcR01kbYcvkKoPCii8pQpbxC7uAKZO5DcnPVVFOdTmPocJZYbvkGpBzmx3CBNOlsNIxWzRHs3qtbj6HlPwMQNuCCi5kTtR6s" /></form>
+            </div>
+        </div>
+    </div>
+    <!-- №6 insta -->
+    <div class="popup popup_insta">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Перейти в Инстаграм АТ “КОММОД”?</h4>
+                <p class="popup__text">Нажав на кнопку “Вперед” Вы покинете сайт commod.ru и перейдете на веб-версию Instagram</p>
+                <a href="https://www.instagram.com/at_commod/" class="popup__btn p-btn">Вперед!</a>
+            </div>
+        </div>
+    </div>
+    <!-- №7 facebook -->
+    <div class="popup popup_facebook">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Перейти в Фейсбук АТ “КОММОД”?</h4>
+                <p class="popup__text">Нажав на кнопку “Вперед” Вы покинете сайт commod.ru и перейдете на веб-версию Facebook</p>
+                <a href="https://www.facebook.com/atcommod/" class="popup__btn p-btn">Вперед!</a>
+            </div>
+        </div>
+    </div>
+    <!-- №9 thank -->
+    <div class="popup popup_thank-message">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Спасибо! Данные будут обработаны в ближайшее время</h4>
+                <button class="popup__close p-btn">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <!-- №10 forgot -->
+    <div class="popup popup_forgot">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Забыли свой логин или пароль?</h4>
+                <p class="popup__text">Наши менеджеры отправят Вам ключ доступа</p>
+                <span class="popup__subtitle">ОСТАВЬТЕ СВОИ КОНТАКТЫ</span>
+                <form action="#" class="popup__form" data-test="thank" data-message="thank">
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Ваше ФИО" class="popup__input input _req">
+                    </div>
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Название вашей организации" class="popup__input input _req">
+                    </div>
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Контактный телефон" class="popup__input input _phone _req">
+                    </div>
+                    <label class="popup__check checkbox">
+                        <input data-error="" class="checkbox__input _req" type="checkbox" value="1" name="agreement" checked>
+                        <span class="checkbox__text"><span>Я соглашаюсь с <a href="/Home/Privacy">Политикой конфиденциальности</a></span></span>
+                    </label>
+                    <button type="submit" class="popup__btn p-btn">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- №8 mailing -->
+    <div class="popup popup_mailing">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Подпишитесь на рассылку актуальных новостей.</h4>
+                <p class="popup__text">Будьте “в рынке” и получайте еженедельные сводки и краткие версии всех новостей. Узнавайте об обновлениях и акциях АТ “КОММОД” первыми, просто оставьте контактный адрес электронной почты. Без спама, без ежедневных рассылок.</p>
+                <span class="popup__subtitle">ЛИЧНЫЙ АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</span>
+                <form action="#" class="popup__form">
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Ваш e-mail" class="popup__input input _req _email">
+                    </div>
+                    <div class="popup__row">
+                        <button type="button" class="popup__close _icon-arrow">Выйти из формы</button>
+                        <button type="submit" class="popup__btn p-btn">Подписаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- №9 thank-2 -->
+    <div class="popup popup_thank-2-message">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Спасибо! Ваш персональный менеджер свяжется с Вами в ближайшее время для подтверждения регистрации</h4>
+                <button class="popup__close p-btn">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <!-- №12 support -->
+    <div class="popup popup_support">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Получите техническую помощь от специалистов АТ “КОММОД”</h4>
+                <p class="popup__text">Без спама, без навязывания услуг и без лишних вопросов выясним Ваши потребности.</p>
+                <span class="popup__subtitle">ОСТАВЬТЕ СВОИ КОНТАКТЫ</span>
+                <form action="#" class="popup__form" data-test="thank" data-message="thank">
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Ваше ФИО" class="popup__input input _req">
+                    </div>
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Контактный телефон" class="popup__input input _phone _req">
+                    </div>
+                    <label class="popup__check checkbox">
+                        <input data-error="" class="checkbox__input _req" type="checkbox" value="1" name="agreement" checked>
+                        <span class="checkbox__text"><span>Я соглашаюсь с <a href="/Home/Privacy">Политикой конфиденциальности</a></span></span>
+                    </label>
+                    <button type="submit" class="popup__btn p-btn">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- №13 payment -->
+    <div class="popup popup_payment">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Оставьте заявку на приобретение АТ “КОММОД” и получите расчет стоимости необходимых вам модулей</h4>
+                <p class="popup__text">Без спама, без навязывания услуг и без лишних вопросов выясним Ваши потребности.</p>
+                <span class="popup__subtitle">ОСТАВЬТЕ СВОИ КОНТАКТЫ</span>
+                <form action="#" class="popup__form" data-test="thank" data-message="thank">
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Ваше ФИО" class="popup__input input _req">
+                    </div>
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Контактный телефон" class="popup__input input _phone _req">
+                    </div>
+                    <label class="popup__check checkbox">
+                        <input data-error="" class="checkbox__input _req" type="checkbox" value="1" name="agreement" checked>
+                        <span class="checkbox__text"><span>Я соглашаюсь с <a href="/Home/Privacy">Политикой конфиденциальности</a></span></span>
+                    </label>
+                    <button type="submit" class="popup__btn p-btn">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- №14 desc -->
+    <div class="popup popup_desc">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Расскажем все о КОММОД Деск</h4>
+                <p class="popup__text">Без спама, без навязывания услуг и без лишних вопросов выясним Ваши потребности.</p>
+                <span class="popup__subtitle">ОСТАВЬТЕ СВОИ КОНТАКТЫ</span>
+                <form action="#" class="popup__form" data-test="thank" data-message="thank">
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Ваше ФИО" class="popup__input input _req">
+                    </div>
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Контактный телефон" class="popup__input input _phone _req">
+                    </div>
+                    <label class="popup__check checkbox">
+                        <input data-error="" class="checkbox__input _req" type="checkbox" value="1" name="agreement" checked>
+                        <span class="checkbox__text"><span>Я соглашаюсь с <a href="/Home/Privacy">Политикой конфиденциальности</a></span></span>
+                    </label>
+                    <button type="submit" class="popup__btn p-btn">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- №15 mobile -->
+    <div class="popup popup_mobile">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Расскажем все о КОММОД Мобайл</h4>
+                <p class="popup__text">Без спама, без навязывания услуг и без лишних вопросов выясним Ваши потребности.</p>
+                <span class="popup__subtitle">ОСТАВЬТЕ СВОИ КОНТАКТЫ</span>
+                <form action="#" class="popup__form" data-test="thank" data-message="thank">
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Ваше ФИО" class="popup__input input _req">
+                    </div>
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Контактный телефон" class="popup__input input _phone _req">
+                    </div>
+                    <label class="popup__check checkbox">
+                        <input data-error="" class="checkbox__input _req" type="checkbox" value="1" name="agreement" checked>
+                        <span class="checkbox__text"><span>Я соглашаюсь с <a href="/Home/Privacy">Политикой конфиденциальности</a></span></span>
+                    </label>
+                    <button type="submit" class="popup__btn p-btn">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- №16 web -->
+    <div class="popup popup_web">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Расскажем все о КОММОД Веб</h4>
+                <p class="popup__text">Без спама, без навязывания услуг и без лишних вопросов выясним Ваши потребности.</p>
+                <span class="popup__subtitle">ОСТАВЬТЕ СВОИ КОНТАКТЫ</span>
+                <form method="post" data-ajax="ajax" class="popup__form" data-message="thank" action="/Home/HelpVariantTwo">
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="name" data-error="" data-value="Ваше ФИО" class="popup__input input _req">
+                    </div>
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="phone" data-error="" data-value="Контактный телефон" class="popup__input input _phone _req">
+                    </div>
+                    <label class="popup__check checkbox">
+                        <input data-error="" class="checkbox__input _req" type="checkbox" value="1" name="agreement" checked>
+                        <span class="checkbox__text"><span>Я соглашаюсь с <a href="/Home/Privacy">Политикой конфиденциальности</a></span></span>
+                    </label>
+                    <button type="submit" class="popup__btn p-btn">Отправить запрос</button>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KyaIG5HqB9CodflIPicxnajz4Vto8EWW0vOoZwNonjMUEjNa0wySsHrcR01kbYcvkKoPCii8pQpbxC7uAKZO5DcnPVVFOdTmPocJZYbvkGpBzmx3CBNOlsNIxWzRHs3qtbj6HlPwMQNuCCi5kTtR6s" /></form>
+            </div>
+        </div>
+    </div>
+    <!-- №18 tell -->
+    <div class="popup popup_tell">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Расскажите нам о своих впечатлениях от использования АТ “КОММОД”</h4>
+                <p class="popup__text">Заполните форму и напишите в свободном стиле о том, что Вам нравится или не нравится в АТ “КОММОД”</p>
+                <span class="popup__subtitle">ОСТАВЬТЕ СВОИ КОНТАКТЫ</span>
+                <form method="post" data-ajax="ajax" class="popup__form" data-message="thank" action="/Home/HelpVariantThree">
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="name" data-error="" data-value="Ваше ФИО" class="popup__input input _req">
+                    </div>
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="phone" data-error="" data-value="Контактный телефон" class="popup__input input _phone _req">
+                    </div>
+                    <textarea autocomplete="off" name="comment" data-value="Расскажите о своих впечатлениях" data-error="" class="popup__textarea input"></textarea>
+                    <label class="popup__check checkbox">
+                        <input data-error="" class="checkbox__input _req" type="checkbox" value="1" name="agreement" checked>
+                        <span class="checkbox__text"><span>Я соглашаюсь с <a href="/Home/Privacy">Политикой конфиденциальности</a></span></span>
+                    </label>
+                    <button type="submit" class="popup__btn p-btn">Отправить запрос</button>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KyaIG5HqB9CodflIPicxnajz4Vto8EWW0vOoZwNonjMUEjNa0wySsHrcR01kbYcvkKoPCii8pQpbxC7uAKZO5DcnPVVFOdTmPocJZYbvkGpBzmx3CBNOlsNIxWzRHs3qtbj6HlPwMQNuCCi5kTtR6s" /></form>
+            </div>
+        </div>
+    </div>
+    <!-- №19 demo -->
+    <div class="popup popup_demo">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">Проведем демонстрацию, отправим презентацию, а также ответим на все ваши вопросы</h4>
+                <p class="popup__text">Без спама, без навязывания услуг и без лишних вопросов выясним Ваши потребности.</p>
+                <span class="popup__subtitle">ОСТАВЬТЕ СВОИ КОНТАКТЫ</span>
+                <form method="post" data-ajax="ajax" class="popup__form" data-message="thank" action="/Home/HelpVariantDemo">
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="name" data-error="" data-value="Ваше ФИО" class="popup__input input _req">
+                    </div>
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="phone" data-error="" data-value="Контактный телефон" class="popup__input input _phone _req">
+                    </div>
+                    <label class="popup__check checkbox">
+                        <input data-error="" class="checkbox__input _req" type="checkbox" value="1" name="form[]" checked>
+                        <span class="checkbox__text"><span>Я соглашаюсь с <a href="/Home/Privacy">Политикой конфиденциальности</a></span></span>
+                    </label>
+                    <button type="submit" class="popup__btn p-btn">Отправить запрос</button>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KyaIG5HqB9CodflIPicxnajz4Vto8EWW0vOoZwNonjMUEjNa0wySsHrcR01kbYcvkKoPCii8pQpbxC7uAKZO5DcnPVVFOdTmPocJZYbvkGpBzmx3CBNOlsNIxWzRHs3qtbj6HlPwMQNuCCi5kTtR6s" /></form>
+            </div>
+        </div>
+    </div>
+    <!-- №20 change -->
+    <div class="popup popup_change change">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="change__title">Изменть мои данные</h4>
+                <p class="change__text">Вы должны иметь доступ к адресу электронной почты, который указываете. Если вы забудете свой логин или пароль, то мы вышлем вам его по адресу, который указан в вашем профиле. Актуальный номер телефона необходим специалистам технической поддержки для своевремнной консультации</p>
+                <form action="#" class="change__form">
+                    <div class="change__row">
+                        <label for="" class="change__label">Адрес электронной почты</label>
+                        <input id="change-inp-1" autocomplete="off" type="text" name="form[]" data-error="" data-value="mail@mail.ru" class="change__input input _req _mail">
+                    </div>
+                    <div class="change__row">
+                        <label for="" class="change__label">Номер мобильного телефона</label>
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="+7 (777) 777-77-77" class="change__input input _phone _req">
+                    </div>
+                    <button type="submit" class="change__btn btn">Сохранить</button>
+                    <button type="button" class="change__btn change__btn_tr popup__close popup__close_static btn">Отменить</button>
+                </form>
+                <div class="popup__close-2 _icon-close"></div>
+            </div>
+        </div>
+    </div>
+    <!-- №20 plug -->
+    <div class="popup popup_plug change">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="change__title">Запрос на подключение</h4>
+                <p class="change__text">Если вы хотите подключить услугу, то, пожалуйста, подтвердите свою личность. Заполните адрес электронной почты, а также номер мобильного телефона. Персональный менеджер свяжется с вами для уточнения деталей и ваших пожеланий</p>
+                <form action="#" class="change__form">
+                    <div class="change__row">
+                        <label for="" class="change__label">Адрес электронной почты</label>
+                        <input id="change-inp-1" autocomplete="off" type="text" name="form[]" data-error="" data-value="mail@mail.ru" class="change__input input _req _mail">
+                    </div>
+                    <div class="change__row">
+                        <label for="" class="change__label">Номер мобильного телефона</label>
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="+7 (777) 777-77-77" class="change__input input _phone _req">
+                    </div>
+                    <button type="submit" class="change__btn btn">Запросить</button>
+                    <button type="button" class="change__btn change__btn_tr popup__close popup__close_static popup__close btn">Отменить</button>
+                </form>
+                <div class="popup__close-2 _icon-close"></div>
+            </div>
+        </div>
+    </div>
+    <!-- №20 technical-support -->
+    <div class="popup popup_technical-support change">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="change__title">Запрос на техподдержку</h4>
+                <p class="change__text">Если вам нужна помощь, то, пожалуйста, оставьте свои актуальные контактные данные. Заполните адрес электронной почты, а также номер мобильного телефона. Специалист техподдержки АТ “КОММОД” свяжется с вами в рабочее время для уточнения деталей и ваших пожеланий</p>
+                <form action="#" class="change__form">
+                    <div class="change__row">
+                        <label for="" class="change__label">Адрес электронной почты</label>
+                        <input id="change-inp-1" autocomplete="off" type="text" name="form[]" data-error="" data-value="mail@mail.ru" class="change__input input _req _mail">
+                    </div>
+                    <div class="change__row">
+                        <label for="" class="change__label">Номер мобильного телефона</label>
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="+7 (777) 777-77-77" class="change__input input _phone _req">
+                    </div>
+                    <button type="submit" class="change__btn btn">Отправить</button>
+                    <button type="button" class="change__btn change__btn_tr popup__close popup__close_static btn">Отменить</button>
+                </form>
+                <div class="popup__close-2 _icon-close"></div>
+            </div>
+        </div>
+    </div>
+    <!-- №20 call-me -->
+    <div class="popup popup_call-me change">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="change__title">Перезвоните мне</h4>
+                <p class="change__text">Если вам необходимо перезвонить, то, пожалуйста, оставьте свое имя, а также контактный номер телефона ниже. Ваш персональный менеджер свяжется с вами как можно быстрее в рабочее время.</p>
+                <form action="#" class="change__form">
+                    <div class="change__row">
+                        <label for="" class="change__label">Ваше имя и отчество</label>
+                        <input id="" autocomplete="off" type="text" name="form[]" data-error="" data-value="Иван Иванович" class="change__input input _req">
+                    </div>
+                    <div class="change__row">
+                        <label for="" class="change__label">Номер мобильного телефона</label>
+                        <input autocomplete="off" type="text" name="form[]" data-error="" data-value="+7 (777) 777-77-77" class="change__input input _phone _req">
+                    </div>
+                    <button type="submit" class="change__btn btn">Отправить</button>
+                    <button type="button" class="change__btn change__btn_tr popup__close popup__close_static btn">Отменить</button>
+                </form>
+                <div class="popup__close-2 _icon-close"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //======================================================================// -->
+
+
+
+    <div class="popup popup_popup">
+        <div class="popup__content">
+            <div class="popup__body">
+                <div class="popup__close"></div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_massagename-message">
+        <div class="popup__content">
+            <div class="popup__body">
+                <div class="popup__close"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/vendor.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/scroll.js"></script>
+</body>
+
+</html>
