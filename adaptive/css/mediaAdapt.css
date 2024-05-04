@@ -98,6 +98,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .menu__btn:first-child {
+    margin-left: 28px;
+  }
   .commod__nav {
     justify-content: end;
     gap: 10px;
@@ -105,9 +108,9 @@
   .header__content {
     padding: 0;
   }
-  .initial__content {
-    transform: translateX(190px)
-  }
+   .initial__content {
+    max-width: 1000px;
+  } 
   .initial__title {
     font-size: 40px;
   }
@@ -160,6 +163,9 @@
 }
 
 @media (min-width:480px) and (max-width: 767px) {
+  .menu__btn:first-child {
+    margin-left: 19px;
+  }
   .news__subtitle {
     font-size: 30px;
   }
@@ -169,9 +175,9 @@
     font-size: 17px;
   }
 
-  .initial__content {
-    transform: translateX(100px)
-  }
+  /* .initial__content {
+   
+  } */
   .initial__text {
     font-size: 17px;
     line-height: 20px
@@ -184,7 +190,7 @@
     width: 130%;
   }
   .commod__text {
-    font-size:17px;
+    font-size:20px;
   }
   .commod__title {
     font-size: 25px;
@@ -243,8 +249,7 @@
     font-size: 16px;
   }
   .initial__content {
-    transform: translateX(80px);
-    top: 15px;
+    top: 25px;
   }
   .initial__title {
     font-size: 28px;
@@ -253,7 +258,6 @@
     font-size: 14px;
     line-height: 17px;
   }
-  
   .footer__list:nth-of-type(2) li:first-child {
    transform: translateX(20px)
   }
@@ -477,6 +481,24 @@
     }
 }
 @media (min-width: 480px) and (max-width: 768px) {
+  .support__subtitle {
+    font-size: 30px;
+  }
+  .support__title {
+    font-size: 30px;
+  }
+  .support__text {
+    font-size: 20px;
+  }
+  .initial__text {
+    font-size: 20px
+  }
+  .wholesale__title {
+    font-size: 40px;
+  }
+  .choice__text {
+    font-size: 20px;
+  }
   .menu__body {
     top: 133px;
     }
@@ -492,15 +514,66 @@
     width: 574px
   }
 }
-@media (min-width: 375px) and (max-width: 479px) {
+@media (min-width: 360px) and (max-width: 479px) {
+  .why__title {
+    font-size: 29px;
+  }
+  .why__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+  }
+  .wholesale__title {
+    font-size: 40px;
+  }
+  .wholesale__text {
+    font-size: 17px;
+  }
+  .wholesale__link {
+    font-size: 20px;
+  }
+  .choice__text{
+    font-size: 17px;
+  }
+  .choice__subtext {
+    font-size: 17px;
+  }
+  .one__text {
+    font-size: 17px;
+  }
+  .one__title {
+    font-size: 29px;
+  }
+  .support__title {
+    font-size: 29px;
+  }
+  .support__text {
+    font-size: 17px;
+  }
+  .menu__btn:first-child {
+    margin-left: 19px;
+  }
+  ._container {
+    max-width: 480px;
+  }
+  .one__content {
+    padding: 15px;
+  }
   p.initial__text {
     transform: translateY(-42px)
   }
   h2.initial__title {
     transform: translateY(-20px)
   }
+  
 .news__subtitle{
-  font-size: 25px;
+  font-size: 29px;
+}
+.support__subtitle {
+  font-size: 29px;
+}
+.support__subtext {
+  font-size: 17px;
 }
   .commod__nav {
     gap: 10px;
